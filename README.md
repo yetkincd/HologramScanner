@@ -9,7 +9,7 @@ In summary the system requires that a camera be carefully positined in front of 
 
 Another variant of the HologramScanner uses linear scanning to take images of life sized objects.
 
-Project Creators:Cansu Deniz Yetkin, Kerem Bozkaya, Bulut Bolcal, Çağlar Balık
+Project Creators: Cansu Deniz Yetkin, Kerem Bozkaya, Bulut Bolcal, Çağlar Balık
 
 Project Advisor: Dr. Oğuz Yetkin 
 
