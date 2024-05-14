@@ -1,7 +1,10 @@
 //Oguz Yetkin 11/1/2018
 //oyetkin@gmail.com
 //based on code developed in conjunction with Mr. Naresh Lakshman Raman in 2012
-//rotates a servo in given increments and takes a picture with a specified camera
+//
+//Modified by Kerem Bozkaya with help from Cansu Yetkin and Bulut Bolcal
+//This file uses an Ender3 printer with a camera on it in order to create a Quilt
+//file compatible with the Looking Glass Portrait
 
 
 int min_frame = 0;
@@ -38,11 +41,11 @@ void make_quilt(){
       image(img,j*420,i*560);
     }
   }
-  save("C:\\Users\\kerem\\Desktop\\linear_tarama\\quilts\\quilt_qs8x6a0.75.png");
+  save("quilts/quilt_qs8x6a0.75.png");
 }
 
 void right(){
-  String path="C:\\Users\\kerem\\Desktop\\linear_tarama\\tarama\\Frame";
+  String path="tarama/Frame";
   String format=".png";
   for(int i=1;i<=max_frame;i++){
     String s=String.format("%04d",i);
@@ -130,7 +133,7 @@ void draw() {
         println("reading camera again");
         
         delay(1000);
-        filename = String.format("C:\\Users\\kerem\\Desktop\\linear_tarama\\tarama\\%s%04d.png", filebase, hframe);
+        filename = String.format("tarama/%s%04d.png", filebase, hframe);
         PImage imge=get(0, 0, 560, 420);
         imge.save(filename);
         println(filename);
@@ -142,7 +145,7 @@ void draw() {
   if (done == 1) {
     myPort.stop();
     println("we are done");
-    File file = new File("C:\\Users\\kerem\\Desktop\\linear_tarama\\tarama\\Frame0000.png");
+    File file = new File("tarama/Frame0000.png");
     file.delete();
     right();
     println("rotated right");
