@@ -4,3 +4,4 @@ The HologramScanner is a system that aims to make the process of scanning small 
 
 Below is a graph describing how the system which utilizes "Rotational Scanning" works:
 ![image](https://github.com/yetkincd/HologramScanner/assets/129785208/81efef1c-f7a1-4e96-aacf-28343a847ffc)
+In summary the system requires that a camera be carefully positined in front of a microscope under which a stepper motor with an object that is to be scanned is placed. The camera then takes 48 photos as the stepper motor rotates. After which the photos aresent to the PC and combined into a quilt for display using a Looking Glass or similar autostereoscopic device.
